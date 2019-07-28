@@ -1,0 +1,39 @@
+# The URL the site will be built for
+base_url = "https://jacobrosenthal.com"
+
+# Used in RSS by default
+title = "Jacob Rosenthal"
+description = "Embedded Hardware"
+
+theme = "hallo"
+
+# Whether to automatically compile all Sass files in the sass directory
+compile_sass = true
+
+# Whether to do syntax highlighting
+# Theme can be customised by setting the `highlight_theme` variable to a theme supported by Zola
+highlight_code = false
+
+# Whether to build a search index to be used later on by a JavaScript library
+build_search_index = false
+
+
+[extra]
+greeting = ""
+iam = ""
+
+links = [
+    { title = "Twitter", url = "https://twitter.com/jacobrosenthal", icon = "twitter" },
+    { title = "GitHub", url = "https://github.com/jacobrosenthal", icon = "github" },
+    { title = "Blog", url = "https://citizengadget.com", icon = "tumblr" },
+    { title = "LinkedIn", url = "https://www.linkedin.com/in/jacobrosenthal/", icon = "linkedin" },
+    { title = "Keybase", url = "https://keybase.io/jacobrosenthal", icon = "keybase" }
+]
+
+[extra.author]
+name = "Jacob Rosenthal"
+
+[extra.theme]
+background = "#d3e5e9"
+foreground = "#7d6143" # text and portrait border
+hover = "#333" # link hover
