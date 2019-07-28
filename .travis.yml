@@ -11,8 +11,8 @@ before_script:
 script:
   - zola build
 
-# If you are using a different folder than `public` for the output directory, you will
-# need to change the `zola` command and the `ghp-import` path
+# make sure you disable "Build pushed pull requests" in travis or authenticated
+# users prs will be deployed (prior to merging). Its not a security problem, just unexpected
 after_success: |
   cp CNAME public &&
   sudo -H pip install ghp-import &&
